@@ -21,6 +21,7 @@ module Chromedriver
       end
 
       def newest_download
+        print 'HELLO1'
         (downloads.sort { |a, b| version_of(a) <=> version_of(b)}).last
       end
 
